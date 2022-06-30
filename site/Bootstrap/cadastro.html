@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Bootstrap</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="home">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#">Produtos</a>
+            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="./cadastro.html">Cadastro</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container d-flex justify-content-center flex-column my-2">
+      <h1>Cadastro Cliente</h1>
+
+      <form action="./clientes.html">
+        <!-- nome -->
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" name="nome" id="nome" class="form-control" required placeholder="Nome:">
+
+        <!-- Email -->
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" name="email" id="email" class="form-control" required placeholder="Email:">
+
+        <!-- Genero -->
+
+        <input type="radio" name="opc" id="masc" value="masc" required>
+        <label for="masc">masculino</label>
+
+        <input type="radio" name="opc" id="fem" value="fem" required>
+        <label for="fem">feminino</label><br>
+
+        <!-- Data nascimento -->
+        <label for="data" class="form-label">Data nascimento:</label>
+        <input type="date" name="data" id="data" class="form-control" required>
+
+        <!-- Cidade -->
+        <label for="cidade" class="form-label">Cidade:</label>
+        <input type="text" id="cidade" class="form-control" required placeholder="Digite o nome da Cidade">
+
+        <!-- Estado -->
+        <label for="estado" class="form-label">Estado:</label>
+        <select class="form-select" id="estado" aria-label="Default select example">
+          <option selected>Escolha um estado</option>
+          <option value="1">São Paulo</option>
+          <option value="2">Rio de Janeiro</option>
+          <option value="3">Minas Gerais</option>
+          <option value="4">Bahia</option>
+        </select>
+
+        <!-- Telefone -->
+        <div class="mb-3">
+          <label for="tel" class="form-label">Telefone:</label>
+          <input type="tel" name="tel" id="tel" class="form-control" maxlength="11" required
+            placeholder="Ex.: 11987542154">
+        </div>
+        <!-- Button enviar -->
+        <input type="submit" class="btn btn-primary" value="Enviar">
+        <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
+      </form>
+
+    </main>
+
+    <footer class="d-flex align-items-center justify-content-center">
+      <p class="">&#169 by recodepro</p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

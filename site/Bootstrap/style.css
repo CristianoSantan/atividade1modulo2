@@ -16,6 +16,11 @@ main {
     min-height: calc(100vh - 172px);
 }
 
+#deletar {
+    background-color: transparent !important;
+    border: none;
+}
+
 footer {
     width: 100%;
     height: 100px;
